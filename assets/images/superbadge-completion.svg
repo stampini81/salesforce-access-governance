@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 820" role="img" aria-label="Access Governance superbadge completion banner">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#edf6ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="820" fill="url(#sky)"/>
+  <path d="M0 820c120-180 290-240 500-180 90 26 190 31 318 20 174-14 319 11 582 160H0z" fill="#d6edc9"/>
+  <path d="M0 820c88-132 230-171 386-123 96 30 188 48 316 39 224-15 404 31 698 84H0z" fill="#b8dea5"/>
+  <text x="700" y="120" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700" fill="#0b3b75">Woohoo!</text>
+  <g transform="translate(610 155)">
+    <path d="M90 0 164 42v84c0 41-29 69-74 79-45-10-74-38-74-79V42z" fill="#4f2eb8" stroke="#d9d9ef" stroke-width="8"/>
+    <rect x="50" y="58" width="78" height="48" rx="6" fill="#dfe7ff"/>
+    <circle cx="154" cy="34" r="26" fill="#10b981" stroke="#ffffff" stroke-width="8"/>
+    <path d="m143 35 8 8 16-19" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="700" y="390" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#222222">Superbadge: Access Governance</text>
+  <text x="700" y="485" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="66" font-weight="700" fill="#0b8a55">+ 1000 Challenge Points</text>
+  <text x="700" y="565" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="60" font-weight="700" fill="#0b8a55">+ 500 Bonus Superbadge Points</text>
+  <text x="700" y="650" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#1a1a1a">Keep building new skills!</text>
+  <text x="700" y="705" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#1a1a1a">Trailhead Superbadge completion snapshot</text>
+</svg>

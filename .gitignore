@@ -1,0 +1,45 @@
+.sf/
+.sfdx/
+AppData/
+temp_probe/
+temp_probe2/
+
+# Local investigation artifacts
+*_out.json
+probe*.json
+probe2*.json
+current_*.json
+final_*.json
+retrieve_*.json
+deploy_*.json
+verify_*.json
+step*_account_update.json
+account_*.json
+analytics_*.json
+layout_query.json
+opp_field_history_describe.json
+opportunity_describe*.json
+org_display.json
+permission_set_describe.json
+pref_history_*.json
+privileged_out.json
+psg*.json
+rahul_*.json
+report_types.json
+sales_rep_*.json
+target_*.json
+targets_out.json
+ui_related_lists.json
+all_account_history*.json
+
+# One-off helper scripts used during org execution
+*.apex
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Logs
+*.log

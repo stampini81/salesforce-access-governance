@@ -1,0 +1,34 @@
+name: Salesforce Org Validation
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  validate-against-org:
+    if: ${{ secrets.SF_AUTH_URL != '' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Salesforce CLI
+        run: npm install --global @salesforce/cli
+
+      - name: Authenticate org
+        shell: bash
+        run: |
+          echo "${{ secrets.SF_AUTH_URL }}" > ./sf-auth-url.txt
+          sf org login sfdx-url --sfdx-url-file ./sf-auth-url.txt --alias ci-org --set-default
+
+      - name: Validate deployment
+        run: sf project deploy validate --target-org ci-org --source-dir force-app --test-level NoTestRun

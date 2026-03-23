@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Opportunity-Opportunity Layout</members>
+        <members>Opportunity-Opportunity %28Sales%29 Layout</members>
+        <members>Opportunity-Opportunity %28Marketing%29 Layout</members>
+        <members>Opportunity-Opportunity %28Support%29 Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Opportunity</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Delete_Field_History</members>
+        <members>PLATFORM_Customize_Application</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>ComplianceReports</members>
+        <name>ReportFolder</name>
+    </types>
+    <types>
+        <members>Security</members>
+        <members>UserInterface</members>
+        <members>UserManagement</members>
+        <name>Settings</name>
+    </types>
+    <version>66.0</version>
+</Package>

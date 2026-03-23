@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Access Governance Superbadge badge">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#4f2eb8"/>
+      <stop offset="100%" stop-color="#2b1c75"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="320" rx="28" fill="#ffffff"/>
+  <path d="M160 24 258 80v112c0 54-38 91-98 104C100 283 62 246 62 192V80z" fill="url(#g)" stroke="#d9d9ef" stroke-width="12"/>
+  <rect x="108" y="105" width="104" height="72" rx="8" fill="#dfe7ff"/>
+  <rect x="120" y="118" width="80" height="44" rx="4" fill="#b9cafc"/>
+  <path d="M126 194h68" stroke="#bfc9f2" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="232" cy="96" r="34" fill="#10b981" stroke="#ffffff" stroke-width="10"/>
+  <path d="m217 96 10 10 20-24" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

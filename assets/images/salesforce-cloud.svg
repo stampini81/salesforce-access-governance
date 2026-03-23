@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 320" role="img" aria-label="Salesforce logo">
+  <rect width="512" height="320" rx="32" fill="#ffffff"/>
+  <g fill="#1b96ff">
+    <circle cx="170" cy="160" r="92"/>
+    <circle cx="250" cy="118" r="88"/>
+    <circle cx="336" cy="152" r="78"/>
+    <circle cx="288" cy="212" r="76"/>
+    <circle cx="196" cy="218" r="70"/>
+    <rect x="108" y="116" width="280" height="140" rx="70"/>
+  </g>
+  <text x="256" y="183" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="54" fill="#ffffff">salesforce</text>
+</svg>
