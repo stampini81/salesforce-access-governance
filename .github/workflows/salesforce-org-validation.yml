@@ -9,7 +9,6 @@ on:
 
 jobs:
   validate-against-org:
-    if: ${{ secrets.SF_AUTH_URL != '' }}
     runs-on: ubuntu-latest
 
     steps:
@@ -24,10 +23,22 @@ jobs:
       - name: Install Salesforce CLI
         run: npm install --global @salesforce/cli
 
+      - name: Validate secret
+        shell: bash
+        env:
+          SF_AUTH_URL: ${{ secrets.SF_AUTH_URL }}
+        run: |
+          if [ -z "$SF_AUTH_URL" ]; then
+            echo "SF_AUTH_URL secret is missing"
+            exit 1
+          fi
+
       - name: Authenticate org
         shell: bash
+        env:
+          SF_AUTH_URL: ${{ secrets.SF_AUTH_URL }}
         run: |
-          echo "${{ secrets.SF_AUTH_URL }}" > ./sf-auth-url.txt
+          printf '%s' "$SF_AUTH_URL" > ./sf-auth-url.txt
           sf org login sfdx-url --sfdx-url-file ./sf-auth-url.txt --alias ci-org --set-default
 
       - name: Validate deployment
